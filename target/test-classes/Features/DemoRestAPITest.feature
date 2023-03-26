@@ -30,8 +30,16 @@ Feature: Dummy Rest API Functionality Scenarios
    Then email is "<email>" is validated
 
     Examples:
-      | url                  | email                           |
-      | /posts/193/comments  | gupta_ret_darshwana@hudson.i    |
+      | url                  | email                            |
+      | /posts/193/comments  | gupta_ret_darshwana@hudson.io    |
+
+   Scenario Outline:  Check the responce time for GET single post
+   Given GET single post "<url>"
+   Then responce time is less than 5 sec
+
+    Examples:
+      | url                  |
+      | /posts/193/comments  |
 
 
 

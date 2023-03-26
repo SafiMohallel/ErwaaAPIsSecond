@@ -9,8 +9,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONArray;
 import org.junit.Assert;
-
-
 import Utilities.PropertiesReader;
 
 import java.net.URI;
@@ -54,6 +52,11 @@ public class DemoRestAPITestSteps {
 
 	@Then("email is {string} is validated")
 	public void email_is_is_validated(String string) {
-		Assert.assertEquals(string, response.then().extract().path("email").toString());
+		Assert.assertEquals(string, response.then().extract().path("email").toString().replace("[", "").replace("]", ""));
+	}
+
+	@Then("responce time is less than {int} milliseconds")
+	public void responce_time_is_less_than_milliseconds(Integer int1) {
+		Assert.assertTrue(int1  > response.getTime() );   
 	}
 }

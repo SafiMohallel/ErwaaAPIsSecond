@@ -50,7 +50,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                8,
+                10,
                 0,
                 0,
                 0,
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 10) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,7 +106,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
+                5,
                 0
             ],
             backgroundColor: [
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Test Report</td>
         <td>1</td>
-      <td>23 Mar 2023, 13:38</td>
+      <td>26 Mar 2023, 13:36</td>
     </tr>
   </tbody>
 </table>
@@ -347,18 +347,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_374103299.html">Dummy Rest API Functionality Scenarios</a></td>
 
-        <td      class="passed"    >8</td>
+        <td      class="passed"    >10</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
+        <td class="total">10</td>
 
-        <td  class="passed"    >4</td>
+        <td  class="passed"    >5</td>
         <td >0</td>
-        <td class="total">4</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="3685048000">3.685</td>
+        <td class="duration" data-value="4024862000">4.024</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -366,18 +366,18 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>8</td>
+      <td>10</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
+      <td>10</td>
 
-      <td>4</td>
+      <td>5</td>
       <td>0</td>
-      <td>4</td>
+      <td>5</td>
 
-      <td class="duration">3.685</td>
+      <td class="duration">4.024</td>
       <td>1</td>
     </tr>
     <tr>
