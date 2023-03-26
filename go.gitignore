@@ -1,6 +1,10 @@
 # ignore ALL .log files
+**/logs
 *.log
 *.txt
+.project
+.classpath
+build/cucumber-reports
 # ignore ALL files in ANY directory named .settings
 .settings/
 settings/
