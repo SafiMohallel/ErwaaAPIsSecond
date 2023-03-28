@@ -35,7 +35,7 @@ Feature: Dummy Rest API Functionality Scenarios
 
    Scenario Outline:  Check the responce time for GET single post
    Given GET single post "<url>"
-   Then responce time is less than 5 sec
+   Then responce time is less than 1000 milliseconds
 
     Examples:
       | url                  |

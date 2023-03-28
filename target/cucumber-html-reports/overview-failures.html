@@ -79,7 +79,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Test Report</td>
         <td>1</td>
-      <td>26 Mar 2023, 13:36</td>
+      <td>27 Mar 2023, 17:24</td>
     </tr>
   </tbody>
 </table>
@@ -98,12 +98,198 @@ $(document).ready(function() {
 </div>
 
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
 
-        <p>You have no failed scenarios in your Cucumber report</p>
+        <div class="elements">
 
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_374103299.html">Dummy Rest API Functionality Scenarios</a>
+    </div>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.785</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the responce time for GET single post</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">StepDefinitions.DemoRestAPITestSteps.before(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">GET single post <span class="argument">&quot;/posts/193/comments&quot;</span></span>
+
+  <span class="lead-duration duration">0.781</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">responce time is less than <span class="argument">1000</span> milliseconds</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.DemoRestAPITestSteps.responce_time_is_less_than_milliseconds(DemoRestAPITestSteps.java:60)
+	at &#10045;.responce time is less than 1000 milliseconds(file:///home/safia/eclipse-workspace/ErwaaAPIsSecond/src/test/java/Features/DemoRestAPITest.feature:38)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
     </div>
   </div>
 </div>

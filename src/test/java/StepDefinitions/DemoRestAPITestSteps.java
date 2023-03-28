@@ -57,6 +57,6 @@ public class DemoRestAPITestSteps {
 
 	@Then("responce time is less than {int} milliseconds")
 	public void responce_time_is_less_than_milliseconds(Integer int1) {
-		Assert.assertTrue(int1  > response.getTime() );   
+		Assert.assertTrue(int1  < response.getTime() );   
 	}
 }
