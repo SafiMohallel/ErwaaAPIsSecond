@@ -7,5 +7,6 @@ cucumber.Properties
 .project
 .classpath
 .settings/
+settings/
 build/
 nohup.out
